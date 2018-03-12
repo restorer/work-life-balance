@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:icon="@drawable/goaleditor__delete"
+        android:id="@+id/deleteMenuItem"
+        android:title="@string/goaleditor__menu__delete"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:icon="@drawable/goaleditor__clear"
+        android:id="@+id/clearMenuItem"
+        android:title="@string/goaleditor__menu__clear"
+        app:showAsAction="ifRoom" />
+
+</menu>

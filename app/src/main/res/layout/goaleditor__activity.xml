@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/goaleditor__bg"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    tools:context=".screen.goaleditor.GoalEditorActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:id="@+id/toolbarView"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        tools:targetApi="lollipop" />
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/goaleditor__padding_vert"
+            android:paddingEnd="@dimen/goaleditor__padding_hor"
+            android:paddingLeft="@dimen/goaleditor__padding_hor"
+            android:paddingRight="@dimen/goaleditor__padding_hor"
+            android:paddingStart="@dimen/goaleditor__padding_hor"
+            android:paddingTop="@dimen/goaleditor__padding_vert">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/goaleditor__name"
+                style="@style/AppGoalEditorLabel" />
+
+            <EditText
+                android:id="@+id/goalNameView"
+                android:inputType="textCapSentences"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/goaleditor__spacing"
+                android:layout_width="match_parent"
+                android:text="@string/goaleditor__desired_time"
+                style="@style/AppGoalEditorLabel" />
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:gravity="end"
+                    android:id="@+id/desiredTime1View"
+                    android:inputType="number"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_width="0dp" />
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/goaleditor__x"
+                    style="@style/AppGoalEditorLabel" />
+
+                <EditText
+                    android:gravity="end"
+                    android:id="@+id/desiredTime2View"
+                    android:inputType="number"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_width="0dp" />
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/goaleditor__x"
+                    style="@style/AppGoalEditorLabel" />
+
+                <EditText
+                    android:gravity="end"
+                    android:id="@+id/desiredTime3View"
+                    android:inputType="number"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_width="0dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/goaleditor__spacing"
+                android:layout_width="match_parent"
+                android:text="@string/goaleditor__total_time"
+                style="@style/AppGoalEditorLabel" />
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:gravity="end"
+                    android:id="@+id/totalTime1View"
+                    android:inputType="number"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_width="0dp" />
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/goaleditor__x"
+                    style="@style/AppGoalEditorLabel" />
+
+                <EditText
+                    android:gravity="end"
+                    android:id="@+id/totalTime2View"
+                    android:inputType="number"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_width="0dp" />
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/goaleditor__x"
+                    style="@style/AppGoalEditorLabel" />
+
+                <EditText
+                    android:gravity="end"
+                    android:id="@+id/totalTime3View"
+                    android:inputType="number"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_width="0dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/saveBtnView"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/goaleditor__spacing"
+                android:layout_width="match_parent"
+                android:text="@string/goaleditor__save" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

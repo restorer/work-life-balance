@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme"
+        parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/theme__primary</item>
+        <item name="colorPrimaryDark">@color/theme__primaryDark</item>
+        <item name="colorAccent">@color/theme__accent</item>
+    </style>
+
+    <style name="AppLauncher"
+        parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:windowBackground">@drawable/launcher__bg</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppGoalEditorLabel">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/goaleditor__label__text_size</item>
+    </style>
+
+</resources>

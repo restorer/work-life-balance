@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="theme__primary">@color/pal__indigo_500</color>
+    <color name="theme__primaryDark">@color/pal__indigo_700</color>
+    <color name="theme__accent">@color/pal__pink_a200</color>
+
+    <color name="launcher__bg">@color/pal__white</color>
+
+    <color name="goals__bg">@color/pal__white</color>
+    <color name="goals__item__pressed_bg">@color/pal__pink_200</color>
+    <color name="goals__item__selected_bg">@color/pal__pink_500</color>
+
+    <color name="goaleditor__bg">@color/pal__white</color>
+</resources>

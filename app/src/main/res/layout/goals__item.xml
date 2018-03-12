@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/goals__item__bg"
+    android:clickable="true"
+    android:focusable="true"
+    android:id="@+id/backgroundView"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:minHeight="@dimen/goals__item__min_height"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/goals__item__padding_vert"
+    android:paddingEnd="@dimen/goals__item__padding_hor"
+    android:paddingLeft="@dimen/goals__item__padding_hor"
+    android:paddingRight="@dimen/goals__item__padding_hor"
+    android:paddingStart="@dimen/goals__item__padding_hor"
+    android:paddingTop="@dimen/goals__item__padding_vert">
+
+    <TextView
+        android:id="@+id/nameView"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:textColor="@color/goals__item__text"
+        android:textSize="@dimen/goals__item__text_size"
+        android:textStyle="bold"
+        tools:text="@tools:sample/first_names" />
+
+    <TextView
+        android:id="@+id/creditsView"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/goals__item__spacing_between"
+        android:layout_marginStart="@dimen/goals__item__spacing_between"
+        android:layout_width="wrap_content"
+        android:textColor="@color/goals__item__text"
+        android:textSize="@dimen/goals__item__text_size"
+        android:fontFamily="monospace"
+        tools:text="100000" />
+
+</LinearLayout>

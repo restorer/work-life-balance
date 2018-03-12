@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="goals__item__padding_hor">32dp</dimen>
+    <dimen name="goals__item__padding_vert">16dp</dimen>
+    <dimen name="goals__item__min_height">112dp</dimen>
+    <dimen name="goals__item__spacing_between">16dp</dimen>
+    <dimen name="goals__item__text_size">18sp</dimen>
+
+    <dimen name="goaleditor__padding_hor">16dp</dimen>
+    <dimen name="goaleditor__padding_vert">32dp</dimen>
+    <dimen name="goaleditor__label__text_size">16sp</dimen>
+    <dimen name="goaleditor__spacing">16dp</dimen>
+</resources>

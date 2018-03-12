@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Work Life Balance</string>
+    <string name="leak_canary_display_activity_label">Work Life Balance Leaks</string>
+
+    <string name="common__ok">OK</string>
+    <string name="common__cancel">Cancel</string>
+
+    <string name="launcher__internal_storage_error">Can’t open internal storage. Application will be closed.</string>
+
+    <string name="goals__menu__add">Add</string>
+
+    <string name="goaleditor__menu__delete">Delete</string>
+    <string name="goaleditor__menu__clear">Clear</string>
+    <string name="goaleditor__name">Name</string>
+    <string name="goaleditor__desired_time">Desired time</string>
+    <string name="goaleditor__total_time">Total time</string>
+    <string name="goaleditor__x">x</string>
+    <string name="goaleditor__save">Save</string>
+    <string name="goaleditor__confirm_clear">This action is irreversible! Are you sure to clear credits for this goal?</string>
+    <string name="goaleditor__confirm_delete">This action is irreversible! Are you really want to delete this goal?\n\nGoal settings and credits for this goal will be lost!</string>
+</resources>

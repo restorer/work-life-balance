@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 27
+
+    defaultConfig {
+        applicationId "com.eightsines.worklifebalance"
+        minSdkVersion 16
+        targetSdkVersion 27
+
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        // wlb {
+        //     storeFile file('scop.jks')
+        //     keyAlias 'scop'
+        //     storePassword 'xxx'
+        //     keyPassword 'xxx'
+        // }
+    }
+
+    buildTypes {
+        // debug {
+        //     minifyEnabled false
+        //     signingConfig signingConfigs.wlb
+        // }
+
+        release {
+            minifyEnabled false
+            // signingConfig signingConfigs.wlb
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    kapt "android.arch.lifecycle:compiler:${ver_arch}"
+    kapt "com.google.dagger:dagger-compiler:${ver_dagger}"
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    // implementation "com.android.support.constraint:constraint-layout:${ver_constraintlayout}"
+    // implementation "com.squareup.okhttp3:okhttp:${ver_okhttp}"
+
+    implementation "android.arch.lifecycle:extensions:${ver_arch}"
+    implementation "android.arch.lifecycle:runtime:${ver_arch}"
+    implementation "com.android.support:appcompat-v7:${ver_support}"
+    implementation "com.android.support:design:${ver_support}"
+    implementation "com.android.support:recyclerview-v7:${ver_support}"
+    implementation "com.daimajia.swipelayout:library:${ver_swipelayout}@aar"
+    implementation "com.google.code.gson:gson:${ver_gson}"
+    implementation "com.google.dagger:dagger:${ver_dagger}"
+    implementation "com.parse.bolts:bolts-tasks:${ver_bolts}"
+    implementation "org.greenrobot:eventbus:${ver_eventbus}"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:${ver_kotlin}"
+
+    debugImplementation "com.squareup.leakcanary:leakcanary-android:${ver_leakcanary}"
+    releaseImplementation "com.squareup.leakcanary:leakcanary-android-no-op:${ver_leakcanary}"
+    testImplementation "com.squareup.leakcanary:leakcanary-android-no-op:${ver_leakcanary}"
+
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    testImplementation 'junit:junit:4.12'
+}
